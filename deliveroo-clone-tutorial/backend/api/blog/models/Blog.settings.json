@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "blog",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "maxLength": 50,
+      "required": true,
+      "type": "string"
+    },
+    "Description": {
+      "required": true,
+      "maxLength": 150,
+      "type": "text"
+    },
+    "date_updated": {
+      "required": true,
+      "type": "date"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "article": {
+      "required": true,
+      "type": "richtext"
+    }
+  }
+}

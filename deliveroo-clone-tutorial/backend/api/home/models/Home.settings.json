@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "home",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "slider": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "title": {
+      "maxLength": 50,
+      "required": true,
+      "type": "string"
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    },
+    "Article": {
+      "default": "Enter here",
+      "required": true,
+      "type": "richtext"
+    },
+    "Description": {
+      "maxLength": 100,
+      "required": true,
+      "type": "text"
+    }
+  }
+}
